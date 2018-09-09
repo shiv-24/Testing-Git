@@ -41,6 +41,11 @@ public class EaseTheArray {
 		}
 
 	}
+
+	public static void testFunction(){
+		
+		System.out.println("Added function to check if commit works as expected");
+	} 
 	
 	public static int[] indexChange(int[] arr,int n) {
 		int [] newArray	=	new int[n];
