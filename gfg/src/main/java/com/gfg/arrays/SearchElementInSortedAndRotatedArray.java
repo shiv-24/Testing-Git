@@ -21,7 +21,8 @@ public class SearchElementInSortedAndRotatedArray {
 		int searchEle	=	Integer.parseInt(br.readLine());
 		
 //		System.out.println(binarySearch(arr, searchEle, 0, size, size));
-		System.out.println(binarySearchGfg(arr, searchEle, 0, size-1));
+//		System.out.println(binarySearchGfg(arr, searchEle, 0, size-1));
+		System.out.println(rotatedArraySearch(arr, searchEle, 0, size, size));
 	
 		
 	}
@@ -65,4 +66,34 @@ public class SearchElementInSortedAndRotatedArray {
 		return -1;
 	}
 	
+	public static int rotatedArraySearch(int arr[], int x, int initialPoint, int finalPoint,int size) {
+		
+		int influxPoint	=	rotatedArraySearchHelper(arr, initialPoint, finalPoint);
+		
+		if(influxPoint==-1) {
+			return binarySearch(arr, x, initialPoint, finalPoint, size);
+		}else {
+			if(arr[influxPoint]>x) {
+				return binarySearchGfg(arr, x, influxPoint+1, finalPoint-1);
+			}else {
+				return binarySearchGfg(arr, x, initialPoint, influxPoint-1);
+			}
+		}
+	}
+	
+	public static int rotatedArraySearchHelper(int arr[], int initialPoint, int finalPoint) {
+		
+		if(finalPoint>=initialPoint) {
+			
+			int mid	=	initialPoint+(finalPoint-initialPoint)/2;
+			
+			if(arr[mid]>arr[mid+1]) {
+				return mid;
+			}else {
+				return rotatedArraySearchHelper(arr, mid+1, finalPoint);
+			}
+		}
+		
+		return -1;
+	}
 }
