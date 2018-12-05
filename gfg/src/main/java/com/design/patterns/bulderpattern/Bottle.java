@@ -1,0 +1,10 @@
+package com.design.patterns.bulderpattern;
+
+public class Bottle implements Packing{
+
+	public String pack() {
+		return "Bottle"; 
+		
+	}
+
+}
