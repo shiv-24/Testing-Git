@@ -1,0 +1,12 @@
+[com.java.exceptionhandling.CheckedExceptionImpl.main(CheckedExceptionImpl.java:23)evel] 2018-12-05 22:49:24.198 [main] Logger - Exception occured because Input cannot be less than 0
+[com.java.exceptionhandling.CheckedExceptionImpl.main(CheckedExceptionImpl.java:25)evel] 2018-12-05 22:50:41.216 [main] Logger - Exception occured because Input cannot be less than 0
+[com.java.exceptionhandling.CEForUncheckedExceptions.<init>(CEForUncheckedExceptions.java:15)evel] 2018-12-05 22:55:26.840 [main] Logger - InCorrect FileName
+[com.java.exceptionhandling.CEForUncheckedExceptions.<init>(CEForUncheckedExceptions.java:15)evel] 2018-12-05 22:56:05.256 [main] Logger - InCorrect FileName
+[com.java.exceptionhandling.CEForUncheckedExceptions.<init>(CEForUncheckedExceptions.java:15)evel] 2018-12-05 22:57:11.667 [main] Logger - InCorrect FileName
+[com.java.exceptionhandling.CEForUncheckedExceptions.<init>(CEForUncheckedExceptions.java:15)evel] 2018-12-05 22:57:56.944 [main] Logger - InCorrect FileName
+java.io.FileNotFoundException: asasda (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.util.Scanner.<init>(Unknown Source)
+	at com.java.exceptionhandling.UnCheckedExceptionImpl.main(UnCheckedExceptionImpl.java:14)

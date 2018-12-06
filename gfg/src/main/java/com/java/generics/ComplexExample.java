@@ -31,7 +31,7 @@ class Fruit {
 class Apple extends Fruit {
 
 	private String colour;
-
+	
 	public void setColor(String color) {
 		this.colour = color;
 	}
