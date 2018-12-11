@@ -24,8 +24,7 @@ public class Pair<A, B> {
 	@Override
 	public String toString() {
 
-		return "The Class of Type One is " + this.typeOne.getClass().getName() + " and " + "The Class of Type Two is "
-				+ this.typeTwo.getClass().getName();
+		return  this.typeOne+ " : " + this.typeTwo;
 	}
 
 }
