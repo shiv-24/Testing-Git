@@ -1,8 +1,8 @@
 package com.design.patterns.decoratorpattern;
 
-public class MarutiSUV extends CarDecorator{
+public class SUV extends CarDecorator{
 
-	public MarutiSUV(Car obj) {
+	public SUV(Car obj) {
 		super(obj);
 		// TODO Auto-generated constructor stub
 	}

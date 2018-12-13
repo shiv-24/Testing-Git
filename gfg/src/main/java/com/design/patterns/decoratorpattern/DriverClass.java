@@ -11,7 +11,7 @@ public class DriverClass {
 		
 		System.out.println(c.getCarAccessories()+" : "+ c.getCarCost());
 		
-		c	=	new MarutiSUV(c);
+		c	=	new SUV(c);
 		
 		System.out.println(c.getCarAccessories()+" : "+ c.getCarCost());
 
@@ -19,7 +19,7 @@ public class DriverClass {
 		
 		System.out.println(c.getCarAccessories()+" : "+ c.getCarCost());
 		
-		c	=	new Stereo(c);
+		c	=	new SUV(new Stereo(c));
 		
 		System.out.println(c.getCarAccessories()+" : "+ c.getCarCost());
 				
