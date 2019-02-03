@@ -1,5 +1,7 @@
 package com.java.generics;
 
+import java.util.ArrayList;
+
 public class ImplClass {
 
 	public static void main(String[] args) {
@@ -19,6 +21,16 @@ public class ImplClass {
 		listD.add(2.0);
 		listD.add(3.0);
 		listD.add(4.0);
+		
+
+		List<Double> listD2	=	new List<Double>();
+		listD2.add(21.0);
+		listD2.add(31.0);
+		listD2.add(41.0);
+		
+		listD.addAll(listD2);
+		java.util.List<String> utilList	=	new ArrayList<>();
+//		utilList.add
 		System.out.println("Double Values::");
 		for(int i=0;i<listD.size();i++) {
 			System.out.println(listD.getEle(i));

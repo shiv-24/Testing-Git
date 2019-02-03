@@ -51,6 +51,14 @@ public class List<T> {
 			return null;
 		}
 	}
+	
+	public <U> void addAll(List<? extends T> allList) {
+		for(int i=0;i<allList.size;i++) {
+			this.add(allList.getEle(i));
+		}
+		return;
+		
+	}
 
 	public void forEach(Consumer<T> name) {
 		

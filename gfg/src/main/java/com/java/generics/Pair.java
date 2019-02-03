@@ -21,6 +21,10 @@ public class Pair<A, B> {
 		return this.typeTwo;
 	}
 
+	
+	public <A,B> Pair<B,A> swap(Pair<A,B> pair){
+		return new Pair<B, A>(pair.typeTwo, pair.typeOne);
+	}
 	@Override
 	public String toString() {
 

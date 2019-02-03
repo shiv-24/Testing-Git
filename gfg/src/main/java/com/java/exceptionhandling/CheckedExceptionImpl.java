@@ -4,20 +4,18 @@ import java.util.Scanner;
 
 public class CheckedExceptionImpl {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CEForCheckedExceptions {
 
 		Scanner sc = new Scanner(System.in);
 
 		try {
 			int x = sc.nextInt();
 			if (x < 0) {
-				throw new CEForCheckedExceptions("Input cannot be less than 0");
+				throw new CEForCheckedExceptions();
+			}else if(x==0) {
+				throw new NullPointerException();
 			}
-		} catch (CEForCheckedExceptions e) {
-			String errorMessage = e.getMessage();
-			System.out.println(errorMessage);
-
-		} finally {
+		}finally {
 			sc.close();
 
 		}
