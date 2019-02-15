@@ -50,28 +50,29 @@ public class ConstructionAndTraversal {
 
 			obj.graph[from][to] = weight;
 
-			LinkedList<CustomGraph> fromList = new LinkedList<>();
+//			LinkedList<CustomGraph> fromList = new LinkedList<>();
 			CustomGraph cg = new CustomGraph(to, weight);
-			fromList.add(cg);
-			obj.listGraph[from] = fromList;
+//			fromList.add(cg);
+			obj.listGraph[from].add(cg);
 		}
 
-		for (int i = 0; i < nodes; i++) {
-			for (int j = 0; j < nodes; j++) {
-				if (obj.graph[i][j] != 0) {
-					System.out.println(obj.graph[i][j]);
-				}
-			}
-		}
+//		for (int i = 0; i < nodes; i++) {
+//			for (int j = 0; j < nodes; j++) {
+//				if (obj.graph[i][j] != 0) {
+//					System.out.println(obj.graph[i][j]);
+//				}
+//			}
+//		}
 		
 		for(int i=0;i<nodes;i++) {
 			LinkedList<CustomGraph> fromList	=	obj.listGraph[i];
 			
 			for(int j=0;j<fromList.size();j++) {
-				System.out.println("Edge from"+i);
-				System.out.println("Edge to"+fromList.get(j).to);
-				System.out.println("Weight"+fromList.get(j).weight);
+				System.out.print(i);
+				System.out.print(fromList.get(j).to);
+				System.out.print(fromList.get(j).weight);
 			}
+			System.out.println();
 		}
 			
 	}

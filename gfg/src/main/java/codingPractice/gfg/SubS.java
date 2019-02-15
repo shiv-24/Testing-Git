@@ -1,17 +1,14 @@
 package codingPractice.gfg;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 public class SubS {
 
 	public static void main(String[] args) throws Exception {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String s = br.readLine();
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String s = "abc";
 
-//		subString(s, s.length());
-		subS(s, s.length());
+		subString(s, s.length());
+//		subS(s, s.length());
 	}
 
 	static void subString(String str, int n) {

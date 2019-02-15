@@ -23,25 +23,6 @@ public class CycleInGraph {
 
 	static Set<Integer> visited = new HashSet<>();
 
-//	public boolean dfsUtil(Node start, int val) {
-//
-//		if (start.data == val) {
-//			return true;
-//		} else {
-//			visited.add(start.data);
-//		}
-//
-//		for (int i = 0; i < start.toList.size(); i++) {
-//			Node temp = start.toList.get(i);
-//			if (temp!=null &&!visited.contains(temp.data)) {
-//				dfsUtil(temp, val);
-//			}else if(visited.contains(temp.data)) {
-//				return true;
-//			}
-//		}
-//
-//		return false;
-//	}
 
 	public boolean dfs() {
 
@@ -51,7 +32,6 @@ public class CycleInGraph {
 		for (int i = 0; i < graph.size(); i++) {
 			
 			Node start	=	graph.get(i);
-//			int val	=	start.data;
 			Set<Node> visited	=	new HashSet<>();
 			visited.add(start);
 			queue.add(start);

@@ -6,8 +6,10 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class BFS {
 
@@ -78,30 +80,34 @@ public class BFS {
 		int edges = Integer.parseInt(br.readLine());
 
 		BFS obj = new BFS(nodes);
-
+		
+		Map<Integer,String> tempMap	=	new TreeMap<>();
+		List<Pair> mappingList	=	new LinkedList<>();
+		Set<String> distinctCities	=	new HashSet<>();
+		
 		for (int i = 0; i < edges; i++) {
 			String[] inputValue = br.readLine().split(" ");
-			int from = Integer.parseInt(inputValue[0]);
-			int to = Integer.parseInt(inputValue[1]);
-//			int weight = Integer.parseInt(inputValue[2]);
-
-			// obj.graph[from][to] = weight;
-
-			LinkedList<CustomGraph> fromList = (LinkedList<CustomGraph>) obj.graph[from];
-			CustomGraph cg = new CustomGraph(to, 1);
-			if (fromList != null) {
-				fromList.add(cg);
-
-			} else {
-				fromList = new LinkedList<>();
-				fromList.add(cg);
-
-			}
-
-			obj.graph[from] = fromList;
-
+//			int from = Integer.parseInt(inputValue[0]);
+//			int to = Integer.parseInt(inputValue[1]);
+//
+//			LinkedList<CustomGraph> fromList = (LinkedList<CustomGraph>) obj.graph[from];
+//			CustomGraph cg = new CustomGraph(to, 1);
+//			if (fromList != null) {
+//				fromList.add(cg);
+//
+//			} else {
+//				fromList = new LinkedList<>();
+//				fromList.add(cg);
+//
+//			}
+//
+//			obj.graph[from] = fromList;
+			mappingList.add(new Pair(inputValue[0],inputValue[1]));
+			distinctCities.add(inputValue[0]);
+			distinctCities.add(inputValue[1]);
 		}
-
+		
+		
 		int testCases	=	Integer.parseInt(br.readLine());
 		
 		List<String>answer	=	new ArrayList<>();
@@ -127,4 +133,15 @@ public class BFS {
 		
 	}
 
+}
+
+
+class Pair{
+	String name1, name2;
+	
+	public Pair(String name1, String name2) {
+		this.name1	=	name1;
+		this.name2	=	name2;
+		// TODO Auto-generated constructor stub
+	}
 }
