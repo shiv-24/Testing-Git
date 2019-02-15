@@ -5,7 +5,7 @@ public class SubS {
 	public static void main(String[] args) throws Exception {
 
 //		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String s = "abd";
+		String s = "abss";
 
 		subString(s, s.length());
 //		subS(s, s.length());
