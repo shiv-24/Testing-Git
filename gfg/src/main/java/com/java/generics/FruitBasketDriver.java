@@ -36,7 +36,7 @@ public class FruitBasketDriver {
 		b2.inspect();
 		// b2 can contain only Fruits or its subtypes because of the type bound to
 		// Fruit on FruitBasket class declaration
-		// b2.setElement(new Object());
+//		 b2.put(new Object());
 		// such as Apple
 		b2.put(new Apple());
 		b2.inspect();

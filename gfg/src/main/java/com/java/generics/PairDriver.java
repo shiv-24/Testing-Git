@@ -35,34 +35,34 @@ public class PairDriver {
 	//
 	// }
 
-	public static void main(String[] args) {
-
-		// ComparablePair<Integer, Integer> pairToCompare = new ComparablePair<Integer,
-		// Integer>(2,3);
-		//
-		// ComparablePair<Integer, Integer> secondPair = new ComparablePair<Integer,
-		// Integer>(4,5);
-		//
-		// System.out.println(pairToCompare.compareTo(secondPair));
-
-		List<ComparablePair<Integer, String>> pairList = new List<ComparablePair<Integer, String>>();
-
-		pairList.add(new ComparablePair<Integer, String>(3, "trois"));
-		pairList.add(new ComparablePair<Integer, String>(4, "quatre"));
-		pairList.add(new ComparablePair<Integer, String>(1, "vn"));
-		pairList.add(new ComparablePair<Integer, String>(1, "one"));
-		pairList.add(new ComparablePair<Integer, String>(1, "one"));
-
-		ComparablePair<Integer, String> prevPair = null;
-		for (int i = 0; i < pairList.size(); i++) {
-			ComparablePair<Integer, String> pairToGet = pairList.getEle(i);
-			System.out.println(pairToGet);
-			if (prevPair != null) {
-				System.out.println(pairToGet.compareTo(prevPair));
-				
-			}
-			prevPair = new ComparablePair<Integer, String>(pairToGet.getA(), pairToGet.getB());
-		}
-
-	}
+//	public static void main(String[] args) {
+//
+//		// ComparablePair<Integer, Integer> pairToCompare = new ComparablePair<Integer,
+//		// Integer>(2,3);
+//		//
+//		// ComparablePair<Integer, Integer> secondPair = new ComparablePair<Integer,
+//		// Integer>(4,5);
+//		//
+//		// System.out.println(pairToCompare.compareTo(secondPair));
+//
+//		List<ComparablePair<Integer, String>> pairList = new List<ComparablePair<Integer, String>>();
+//
+//		pairList.add(new ComparablePair<Integer, String>(3, "trois"));
+//		pairList.add(new ComparablePair<Integer, String>(4, "quatre"));
+//		pairList.add(new ComparablePair<Integer, String>(1, "vn"));
+//		pairList.add(new ComparablePair<Integer, String>(1, "one"));
+//		pairList.add(new ComparablePair<Integer, String>(1, "one"));
+//
+//		ComparablePair<Integer, String> prevPair = null;
+//		for (int i = 0; i < pairList.size(); i++) {
+//			ComparablePair<Integer, String> pairToGet = pairList.getEle(i);
+//			System.out.println(pairToGet);
+//			if (prevPair != null) {
+//				System.out.println(pairToGet.compareTo(prevPair));
+//				
+//			}
+//			prevPair = new ComparablePair<Integer, String>(pairToGet.getA(), pairToGet.getB());
+//		}
+//
+//	}
 }

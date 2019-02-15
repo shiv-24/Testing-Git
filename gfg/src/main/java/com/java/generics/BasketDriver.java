@@ -52,12 +52,12 @@ public class BasketDriver {
 		// put() takes a parameter of the parameter type used in object
 		// instantiation,
 		// i.e. Apple. Fruit is not a kind of Apple.
-		// b5.put(new Fruit());
+//		 b5.put(new Fruit());
 
 		// Type mismatch: cannot convert from Basket<Fruit> to Basket<Apple>
 		// The reason is NOT that Fruit is not a subtype of Apple. The reason
 		// is that Basket<Fruit> and Basket<Apple> are unrelated.
-		// Basket<Apple> b3 = new Basket<Fruit>();
+//		 Basket<Apple> b3 = new Basket<Fruit>();
 
 		// Type mismatch: cannot convert from Basket<Apple> to Basket<Fruit>
 		// Even though Apple is a subtype of Fruit, Basket<Fruit> and
